@@ -1,0 +1,10 @@
+{
+  "browser": "edge",
+  "os": "MAC",
+  "resourceFolder": "/resources/drivers/",
+  "MainAppUrlBase": "https://secure1.inmotionhosting.com/index/login",
+  "MainAppUrlBaseAmazon": "https://www.amazon.com.mx/",
+  "JSONFileNameDOM": "all_Element_Page1.json",
+  "ScreenShotPath": "/reports/ScreenShotEvidence/",
+  "neeewval": "/reports/ScreenShotEvidence/"
+}

@@ -1,0 +1,22 @@
+{
+  "BtnLogin": {
+    "GetFielBy": "xpath",
+    "ValueToFind": "//a[contains(text(),'Login')]"
+  },
+  "EmailUser": {
+    "GetFielBy": "xpath",
+    "ValueToFind": "//input[@id='username']"
+  },
+  "PassUser": {
+    "GetFielBy": "xpath",
+    "ValueToFind": "//input[@id='password']"
+  },
+  "CheckCaptcha": {
+    "GetFielBy": "xpath",
+    "ValueToFind": "//div[@id='rc-anchor-container']/div[3]/div/div/div"
+  },
+  "BtnSubmit": {
+    "GetFielBy": "id",
+    "ValueToFind": "login-submit"
+  }
+}
