@@ -17,7 +17,7 @@ class InicializarDriver:
 
     def create_driver(self):
         browser = self.config.get('browser', 'chrome').lower()  # Valor por defecto es 'chrome'
-
+        systemOperative = self.config.get('os', 'windows').lower()
         # Obtener la ruta del directorio de drivers desde el JSON
         resource_folder = self.config.get('resourceFolder', 'resources/drivers/')
         driver_path = os.path.join(os.path.dirname(__file__), '..', resource_folder.lstrip('/'))
@@ -28,16 +28,29 @@ class InicializarDriver:
 
         if browser == 'chrome':
             chrome_options = self.options.get_chrome_options()
-            chrome_driver_path = os.path.join(driver_path, 'chromedriver')
+            # Ajustar la ruta del chromedriver según el sistema operativo
+            if systemOperative == 'linux':
+                chrome_driver_path = os.path.join(driver_path, 'linuxDebian', 'chromedriver')
+            else:  # Asumimos que si no es linux, es windows
+                chrome_driver_path = os.path.join(driver_path, 'chromedriver.exe')
+
             if not os.path.exists(chrome_driver_path):
                 raise FileNotFoundError(f"El archivo del driver no se encuentra en {chrome_driver_path}")
+
+            # Verificar si el archivo es ejecutable
+            if systemOperative == 'windows':
+                chrome_driver_path += '.exe'
             service = ChromeService(executable_path=chrome_driver_path)
             return webdriver.Chrome(service=service, options=chrome_options)
+
         elif browser == 'edge':
             edge_options = self.options.get_edge_options()
             edge_driver_path = os.path.join(driver_path, 'msedgedriver')
             if not os.path.exists(edge_driver_path):
                 raise FileNotFoundError(f"El archivo del driver no se encuentra en {edge_driver_path}")
+            # Verificar si el archivo es ejecutable
+            if systemOperative == 'windows':
+                edge_driver_path += '.exe'
             service = EdgeService(executable_path=edge_driver_path)
             return webdriver.Edge(service=service, options=edge_options)
         else:

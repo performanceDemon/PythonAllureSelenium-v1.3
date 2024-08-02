@@ -1,6 +1,6 @@
 {
   "browser": "edge",
-  "os": "MAC",
+  "os": "mac",
   "resourceFolder": "/resources/drivers/",
   "MainAppUrlBase": "https://secure1.inmotionhosting.com/index/login",
   "MainAppUrlBaseAmazon": "https://www.amazon.com.mx/",

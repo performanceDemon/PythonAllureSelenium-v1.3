@@ -1,0 +1,16 @@
+comando para ejecutar los test de mi container ddocker
+
+docker run -it --name selenium-python-allure-framework \\n    -v /Users/isaac/PycharmProjects/SeleniumFrameWorkPython-v1.3:/app \\n    selenium-python-allure-framework:ubuntu-python3.10
+
+comando para generar mi imagen docker, lo que esta despues de los : son comentarios de especificaciones que tien
+la imagen docker
+docker build -t selenium-python-allure-framework:ubuntu-python3.10 .
+
+comando para navegar en consola dentro de mi container y realizar configuraciones especificas
+
+docker run -it --name my_container <nombre_de_la_imagen> /bin/bash
+
+comando para ejecutar todos los test de mi framework
+pytest --alluredir=allure-results
+ una vez ejecutado, se ejecuta el siguiente comando para ver los resultados
+ allure serve allure-results
