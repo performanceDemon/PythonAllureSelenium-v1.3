@@ -14,3 +14,6 @@ comando para ejecutar todos los test de mi framework
 pytest --alluredir=allure-results
  una vez ejecutado, se ejecuta el siguiente comando para ver los resultados
  allure serve allure-results
+
+url de jenkins para configurar CI/CD
+http://performancedemon:8080/ o  http://20.197.6.43:8080/
