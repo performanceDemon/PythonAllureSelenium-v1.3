@@ -5,6 +5,7 @@ from utils.NavegadorInit import BaseTest, navegador_setup
 
 
 @pytest.mark.usefixtures("navegador_setup")
+@pytest.mark.config_key('amazonPagecompras')
 class TestFailLogin(BaseTest):
 
     def test_fail_login_validMSG(self):

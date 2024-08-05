@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="101d4367-1d0c-45ba-a10e-03ced100ecaa" name="Changes" comment="en ambientes linux ubunto, necesita mas tiempo de espera , aun cuando usas --headless--">
-      <change afterPath="$PROJECT_DIR$/utils/NavegadorInit.py" afterDir="false" />
+    <list default="true" id="101d4367-1d0c-45ba-a10e-03ced100ecaa" name="Changes" comment="creear herencia de todo el driverinit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReaadMe.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ReaadMe.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/allure-results/1e7460cc-1ac6-4bec-aed0-b0aa08334b80-attachment.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/allure-results/3062f839-2979-461b-90bf-f5fe0ee083df-result.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/allure-results/36fe6cfd-ca4c-4739-9d67-a3851ee176c0-result.json" beforeDir="false" />
@@ -32,6 +29,7 @@
       <change beforePath="$PROJECT_DIR$/tests/test_amazon_scrollBasic.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_amazon_scrollBasic.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_login_fail.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_login_fail.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/InitConfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/utils/InitConfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/NavegadorInit.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/NavegadorInit.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -255,7 +253,7 @@
       <workItem from="1722621703583" duration="1359000" />
       <workItem from="1722624991488" duration="1942000" />
       <workItem from="1722734771329" duration="3367000" />
-      <workItem from="1722882343270" duration="3308000" />
+      <workItem from="1722882343270" duration="5482000" />
     </task>
     <task id="LOCAL-00001" summary="version con allure integrado para reportes y evidencia">
       <option name="closed" value="true" />
@@ -313,7 +311,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722739439946</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="creear herencia de todo el driverinit">
+      <option name="closed" value="true" />
+      <created>1722893684082</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1722893684082</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -327,7 +333,8 @@
     <MESSAGE value="incrementar el explicit time por que en linux se genera muchos errores por esto en los scripts de selenium" />
     <MESSAGE value="archivo jenkins para CI/CD" />
     <MESSAGE value="en ambientes linux ubunto, necesita mas tiempo de espera , aun cuando usas --headless--" />
-    <option name="LAST_COMMIT_MESSAGE" value="en ambientes linux ubunto, necesita mas tiempo de espera , aun cuando usas --headless--" />
+    <MESSAGE value="creear herencia de todo el driverinit" />
+    <option name="LAST_COMMIT_MESSAGE" value="creear herencia de todo el driverinit" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SeleniumFrameWorkPython_v1_3$initConfig.coverage" NAME="initConfig Coverage Results" MODIFIED="1722392069620" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
@@ -336,7 +343,7 @@
     <SUITE FILE_PATH="coverage/SeleniumFrameWorkPython_v1_3$DriverOptions.coverage" NAME="DriverOptions Coverage Results" MODIFIED="1722395414741" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/SeleniumFrameWorkPython_v1_3$ejecutarSelenium.coverage" NAME="ejecutarSelenium Coverage Results" MODIFIED="1722396648541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/SeleniumFrameWorkPython_v1_3$WebDriverFactory.coverage" NAME="WebDriverFactory Coverage Results" MODIFIED="1722391559835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
-    <SUITE FILE_PATH="coverage/SeleniumFrameWorkPython_v1_3$.coverage" NAME=" Coverage Results" MODIFIED="1722891091767" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/SeleniumFrameWorkPython_v1_3$.coverage" NAME=" Coverage Results" MODIFIED="1722895902541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/SeleniumFrameWorkPython_v1_3$CreateDriver.coverage" NAME="CreateDriver Coverage Results" MODIFIED="1722391423897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
   </component>
 </project>

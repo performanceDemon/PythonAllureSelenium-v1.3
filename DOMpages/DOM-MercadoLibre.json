@@ -1,0 +1,34 @@
+{
+  "BusquedaText": {
+    "GetFielBy": "xpath",
+    "ValueToFind": "//input[@id='twotabsearchtextbox']"
+  },
+  "BtnBusqueda": {
+    "GetFielBy": "xpath",
+    "ValueToFind": "//input[@id='nav-search-submit-button']"
+  },
+  "Linkultimos90dias": {
+    "GetFielBy": "xpath",
+    "ValueToFind": "//span[.='Últimos 90 Días']"
+  },
+  "LinkMasVendidos": {
+    "GetFielBy": "xpath",
+    "ValueToFind": "//div[@id='nav-xshop']/a[.='Los más vendidos']"
+  },
+  "InputEmailLogin": {
+    "GetFielBy": "xpath",
+    "ValueToFind": "//input[@id='ap_email']"
+  },
+  "BtnLoginContinuar1": {
+    "GetFielBy": "xpath",
+    "ValueToFind": "//input[@id='continue']"
+  },
+  "BtnIniciarSesion": {
+    "GetFielBy": "xpath",
+    "ValueToFind": "//span[.='Hola, identifícate']"
+  },
+  "ValMensaajeError": {
+    "GetFielBy": "xpath",
+    "ValueToFind": "//span[@class='a-list-item']"
+  }
+}

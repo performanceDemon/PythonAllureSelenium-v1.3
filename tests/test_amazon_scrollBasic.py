@@ -4,6 +4,7 @@ from utils.NavegadorInit import BaseTest, navegador_setup
 
 
 @pytest.mark.usefixtures("navegador_setup")
+@pytest.mark.config_key('amazonPagecompras')
 class TestAmazonScroll(BaseTest):
     def test_amazon_scroll_basic(self):
         self.navegador.iniciar_navegador('MainAppUrlBaseAmazon')
