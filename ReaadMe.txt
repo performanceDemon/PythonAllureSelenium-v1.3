@@ -17,3 +17,8 @@ pytest --alluredir=allure-results
 
 url de jenkins para configurar CI/CD
 http://performancedemon:8080/ o  http://20.197.6.43:8080/
+
+en los scriptss de pipeline no perite errores de ningun tipo en las descargas de paquetes
+evitar comandos que requieran permisos de root
+no puedo usar source para ejecutar venv asi que se usa baasah con .
+

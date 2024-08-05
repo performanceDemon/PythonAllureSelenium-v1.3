@@ -1,28 +1,24 @@
+# tests/test_fail_login.py
+
 import pytest
-from utils.InicializarDriver import InicializarDriver
-from utils.FunctionsGeneric import FunctionsGeneric
-from utils.initConfig import InitConfig
+from utils.NavegadorInit import BaseTest, navegador_setup
 
-@pytest.fixture(scope='module')
-def setup():
-    driver_setup = InicializarDriver()
-    driver = driver_setup.get_driver()
-    yield driver, driver_setup
-    driver.quit()
 
-def test_fail_login_validMSG(setup):
-    driver, driver_setup = setup
-    func = FunctionsGeneric(driver)
-    globalVar = InitConfig()
-    # Obtiene la URL principal desde la configuración initConfig.json donde declaro todas las appsa
-    url = globalVar.get('MainAppUrlBaseAmazon',)
-    driver.get(url)
+@pytest.mark.usefixtures("navegador_setup")
+class TestFailLogin(BaseTest):
 
-    func.click('BtnIniciarSesion')
-##esta funcion logea en un paso y valida el mensaje de error de manera generica
+    def test_fail_login_validMSG(self):
+        # Iniciar navegador y navegar a la URL principal
+        self.navegador.iniciar_navegador('MainAppUrlBaseAmazon')
 
-    func.login1step('InputEmailLogin','isaac@fake.com',
-                    'BtnLoginContinuar1',
-                    'ValMensaajeError','No pudimos encontrar una cuenta con esa dirección de correo electrónico')
+        # Hace clic en el botón de iniciar sesión
+        self.navegador.func.click('BtnIniciarSesion')
 
-    func.take_screenshot('errorloginAmazon')
+        # Esta función logea en un paso y valida el mensaje de error de manera genérica
+        self.navegador.func.login1step('InputEmailLogin', 'isaac@fake.com',
+                                       'BtnLoginContinuar1',
+                                       'ValMensaajeError',
+                                       'No pudimos encontrar una cuenta con esa dirección de correo electrónico')
+
+        # Toma una captura de pantalla en caso de error
+        self.navegador.func.take_screenshot('errorloginAmazon')
