@@ -3,7 +3,7 @@
 import pytest
 from utils.NavegadorInit import BaseTest, navegador_setup
 
-
+#para heredar y pasar la configuracion de una nueva app
 @pytest.mark.usefixtures("navegador_setup")
 @pytest.mark.config_key('amazonPagecompras')
 class TestFailLogin(BaseTest):
