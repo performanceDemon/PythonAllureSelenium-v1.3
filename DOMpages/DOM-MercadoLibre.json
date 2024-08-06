@@ -1,19 +1,19 @@
 {
-  "BusquedaText": {
-    "GetFielBy": "xpath",
-    "ValueToFind": "//input[@id='twotabsearchtextbox']"
+  "Paginador2": {
+    "GetFielBy": "css",
+    "ValueToFind": ".andes-pagination__button:nth-child(3) > .andes-pagination__link"
   },
   "BtnBusqueda": {
     "GetFielBy": "xpath",
-    "ValueToFind": "//input[@id='nav-search-submit-button']"
+    "ValueToFind": "//div[@class='nav-icon-search']"
   },
   "Linkultimos90dias": {
     "GetFielBy": "xpath",
     "ValueToFind": "//span[.='Últimos 90 Días']"
   },
-  "LinkMasVendidos": {
+  "LinkNeweBalance515": {
     "GetFielBy": "xpath",
-    "ValueToFind": "//div[@id='nav-xshop']/a[.='Los más vendidos']"
+    "ValueToFind": "//section/ul/li[3]/a"
   },
   "InputEmailLogin": {
     "GetFielBy": "xpath",
@@ -27,8 +27,8 @@
     "GetFielBy": "xpath",
     "ValueToFind": "//span[.='Hola, identifícate']"
   },
-  "ValMensaajeError": {
+  "CampoBusquedaTXT": {
     "GetFielBy": "xpath",
-    "ValueToFind": "//span[@class='a-list-item']"
+    "ValueToFind": "//input[@name='as_word']"
   }
 }

@@ -1,6 +1,6 @@
 {
-  "browser": "edge",
-  "os": "mac",
+  "browser": "chrome",
+  "os": "linux",
   "resourceFolder": "/resources/drivers/",
   "MainAppUrlBase": "https://secure1.inmotionhosting.com/index/login",
   "MainAppUrlBaseAmazon": "https://www.amazon.com.mx/",
@@ -8,5 +8,6 @@
   "ScreenShotPath": "/reports/ScreenShotEvidence/",
   "neeewval": "/reports/ScreenShotEvidence/",
   "amazonPagecompras": "DOMpages/DOM-Amazon.json",
-  "MercadoLibre": "DOMpages/DOM-Amazon.json"
+  "MercadoLibreURL": "https://www.mercadolibre.com.mx/",
+  "DOMMercadoLibre": "DOMpages/DOM-MercadoLibre.json"
 }

@@ -5,13 +5,15 @@ from selenium.webdriver.remote.webdriver import WebDriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import Select
+from selenium.common.exceptions import ElementClickInterceptedException
+from utils.custom_exceptions import ElementNotFoundException, TimeoutException, LoginFailedException
 import allure
 from datetime import datetime
 
 
 
 class FunctionsGeneric:
-    def __init__(self, driver: WebDriver, config_file: str = 'DOMpages/DOM-Amazon.json', timeout=320):
+    def __init__(self, driver: WebDriver, config_file: str = 'DOMpages/DOM-Amazon.json', timeout=5):
         self.driver = driver
         # Resuelve la ruta del archivo JSON usando la ruta relativa
         config_path = os.path.join(os.path.dirname(__file__), '..', config_file)
@@ -58,18 +60,27 @@ class FunctionsGeneric:
     def click(self, name: str):
         """Realiza clic en un elemento basado en un nombre genérico."""
         by, value = self.get_locator(name)
-        element = WebDriverWait(self.driver, self.timeout).until(
+        try:
+         element = WebDriverWait(self.driver, self.timeout).until(
             EC.element_to_be_clickable((by, value))
-        )
-        element.click()
+         )
+         element.click()
+        except ElementClickInterceptedException:
+            raise ElementClickInterceptedException(
+               f"No se pudo hacer clic en el elemento '{name}' por que no lo encontro {value}")
+        except Exception:
+           raise TimeoutException(f"No se pudo hacer clic en el elemento '{name}' usando {by} con valor {value}")
 
     def send_keys(self, name: str, keys: str):
         """Envía teclas a un elemento basado en un nombre genérico."""
         by, value = self.get_locator(name)
-        element = WebDriverWait(self.driver, self.timeout).until(
+        try:
+         element = WebDriverWait(self.driver, self.timeout).until(
             EC.visibility_of_element_located((by, value))
-        )
-        element.send_keys(keys)
+         )
+         element.send_keys(keys)
+        except Exception:
+           raise TimeoutException(f"No se pudo enviar las teclas al elemento '{name}' con valor {value}")
 
     def scroll_bar_generic(self, direction: str, value: int = 500):
         """
@@ -93,54 +104,75 @@ class FunctionsGeneric:
               login_button_name: str):
         """Realiza el proceso de login."""
         # Espera explícita para que el campo de nombre de usuario sea visible
-        by, value = self.get_locator(username_field_name)
-        WebDriverWait(self.driver, self.timeout).until(
-            EC.visibility_of_element_located((by, value))
-        )
-        self.send_keys(username_field_name, username)
+        try:
+            by, value = self.get_locator(username_field_name)
+            WebDriverWait(self.driver, self.timeout).until(
+                EC.visibility_of_element_located((by, value))
+            )
+            self.send_keys(username_field_name, username)
 
-        # Espera explícita para que el campo de contraseña sea visible
-        by, value = self.get_locator(password_field_name)
-        WebDriverWait(self.driver, self.timeout).until(
-            EC.visibility_of_element_located((by, value))
-        )
-        self.send_keys(password_field_name, password)
+            # Espera explícita para que el campo de contraseña sea visible
+            by, value = self.get_locator(password_field_name)
+            WebDriverWait(self.driver, self.timeout).until(
+                EC.visibility_of_element_located((by, value))
+            )
+            self.send_keys(password_field_name, password)
 
-        # Espera explícita para que el botón de login sea clicable
-        by, value = self.get_locator(login_button_name)
-        WebDriverWait(self.driver, self.timeout).until(
-            EC.element_to_be_clickable((by, value))
-        )
-        self.click(login_button_name)
+            # Espera explícita para que el botón de login sea clicable
+            by, value = self.get_locator(login_button_name)
+            WebDriverWait(self.driver, self.timeout).until(
+                EC.element_to_be_clickable((by, value))
+            )
+            self.click(login_button_name)
+        except ElementClickInterceptedException:
+            raise ElementClickInterceptedException(
+               f"No se pudo hacer clic en el elemento '{login_button_name}' porque otro elemento lo interceptó")
+        except Exception:
+            raise TimeoutException(f"No se pudo hacer clic en el elemento '{login_button_name}' usando valor {value}")
+        except Exception:
+            raise TimeoutException(f"No se pudo enviar las teclas al elemento '{username_field_name}' ")
 
     def login1step(self, username_field_name: str, username: str, login_button_name: str, alert_element_name: str, expected_message: str):
         """Realiza el proceso de login de un paso y valida el mensaje de error."""
         # Espera explícita para que el campo de nombre de usuario sea visible
+
         by, value = self.get_locator(username_field_name)
-        WebDriverWait(self.driver, self.timeout).until(
-            EC.visibility_of_element_located((by, value))
-        )
-        self.send_keys(username_field_name, username)
+        try:
+           WebDriverWait(self.driver, self.timeout).until(
+               EC.visibility_of_element_located((by, value))
+           )
+           self.send_keys(username_field_name, username)
 
-        # Hace clic en el botón de login
-        self.click(login_button_name)
+           # Hace clic en el botón de login
+           self.click(login_button_name)
 
-        # Espera explícita para que el elemento de alerta sea visible
-        by, value = self.get_locator(alert_element_name)
-        alert_element = WebDriverWait(self.driver, self.timeout).until(
-            EC.visibility_of_element_located((by, value))
-        )
+           # Espera explícita para que el elemento de alerta sea visible
+           by, value = self.get_locator(alert_element_name)
+           alert_element = WebDriverWait(self.driver, self.timeout).until(
+               EC.visibility_of_element_located((by, value))
+           )
 
-        # Valida el mensaje del elemento de alerta
-        actual_message = alert_element.text
-        assert actual_message == expected_message, f"Expected message: '{expected_message}', but got: '{actual_message}'"
+           # Valida el mensaje del elemento de alerta
+           actual_message = alert_element.text
+           assert actual_message == expected_message, f"Expected message: '{expected_message}', but got: '{actual_message}'"
+
+
+        except ElementClickInterceptedException:
+           raise ElementClickInterceptedException(
+               f"No se pudo hacer clic en el elemento '{login_button_name}' porque otro elemento lo interceptó")
+        except Exception:
+           raise TimeoutException(f"No se pudo hacer clic en el elemento '{login_button_name}' usando valor {value}")
+
 
     def wait_for_element(self, name: str):
         """Espera a que un elemento esté presente en la página."""
-        by, value = self.get_locator(name)
-        WebDriverWait(self.driver, self.timeout).until(
-            EC.presence_of_element_located((by, value))
-        )
+        try:
+            by, value = self.get_locator(name)
+            WebDriverWait(self.driver, self.timeout).until(
+                    EC.presence_of_element_located((by, value))
+                )
+        except Exception:
+           raise TimeoutException(f"se espero hasta {self.timeout}  segundo y no aparecio el elemento'{value}' ")
 
     def is_element_visible(self, name: str) -> bool:
         """Verifica si un elemento es visible en la página."""
@@ -150,8 +182,8 @@ class FunctionsGeneric:
                 EC.visibility_of_element_located((by, value))
             )
             return True
-        except:
-            return False
+        except Exception:
+            raise TimeoutException(f"No se visualiza el elemento '{value}' ")
 
 
     def select_from_dropdown(self, name: str, value: str):
