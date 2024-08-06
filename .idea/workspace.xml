@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="101d4367-1d0c-45ba-a10e-03ced100ecaa" name="Changes" comment="validar">
-      <change afterPath="$PROJECT_DIR$/pytest.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/MercadoLibre/test_buscarProducto.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/custom_exceptions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DOMpages/DOM-MercadoLibre.json" beforeDir="false" afterPath="$PROJECT_DIR$/DOMpages/DOM-MercadoLibre.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/reports/ScreenShotEvidence/errorloginAmazon_20240805_160843.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/FunctionsGeneric.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/FunctionsGeneric.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/InitConfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/utils/InitConfig.json" afterDir="false" />
+    <list default="true" id="101d4367-1d0c-45ba-a10e-03ced100ecaa" name="Changes" comment="ya permite inicializar las paginas que uno necesite automatizar sin nececidad de borrar o harcodear la url raiz">
+      <changelist_data name="darko" email="" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +25,17 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="darko" />
+      </list>
+    </option>
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--follow-tags" />
+        <option name="title" value="Current Branch" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="main" />
@@ -242,7 +246,7 @@
       <workItem from="1722621703583" duration="1359000" />
       <workItem from="1722624991488" duration="1942000" />
       <workItem from="1722734771329" duration="3367000" />
-      <workItem from="1722882343270" duration="12667000" />
+      <workItem from="1722882343270" duration="13289000" />
     </task>
     <task id="LOCAL-00001" summary="version con allure integrado para reportes y evidencia">
       <option name="closed" value="true" />
@@ -324,7 +328,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722896668153</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="ya permite inicializar las paginas que uno necesite automatizar sin nececidad de borrar o harcodear la url raiz">
+      <option name="closed" value="true" />
+      <created>1722904241198</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1722904241198</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -352,7 +364,8 @@
     <MESSAGE value="creear herencia de todo el driverinit" />
     <MESSAGE value="version final de template de test, solo hay que usar los siguientes para heredar y pasar el dom de la pagina con que se desea interactuar.&#10;@pytest.mark.usefixtures(&quot;navegador_setup&quot;)&#10;@pytest.mark.config_key('amazonPagecompras')" />
     <MESSAGE value="validar" />
-    <option name="LAST_COMMIT_MESSAGE" value="validar" />
+    <MESSAGE value="ya permite inicializar las paginas que uno necesite automatizar sin nececidad de borrar o harcodear la url raiz" />
+    <option name="LAST_COMMIT_MESSAGE" value="ya permite inicializar las paginas que uno necesite automatizar sin nececidad de borrar o harcodear la url raiz" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SeleniumFrameWorkPython_v1_3$initConfig.coverage" NAME="initConfig Coverage Results" MODIFIED="1722392069620" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
