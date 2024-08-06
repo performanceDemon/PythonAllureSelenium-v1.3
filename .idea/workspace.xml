@@ -4,32 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="101d4367-1d0c-45ba-a10e-03ced100ecaa" name="Changes" comment="creear herencia de todo el driverinit">
+    <list default="true" id="101d4367-1d0c-45ba-a10e-03ced100ecaa" name="Changes" comment="validar">
+      <change afterPath="$PROJECT_DIR$/pytest.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/MercadoLibre/test_buscarProducto.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/custom_exceptions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/1e7460cc-1ac6-4bec-aed0-b0aa08334b80-attachment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/3062f839-2979-461b-90bf-f5fe0ee083df-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/36fe6cfd-ca4c-4739-9d67-a3851ee176c0-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/3d9f585f-181d-46ee-8aff-20b32d3629f2-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/556b54f4-acf4-4123-a290-9178d4aee8d2-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/6a30a750-6f7f-4424-8f95-c9ac25a07ad2-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/6b2a253a-8910-4446-bb27-8f1483b192e0-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/6f566775-c761-43f3-a421-21e6bfbb8925-attachment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/76b3646a-4397-46d8-9718-ece2cf064c02-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/8e5825df-0c9b-4acd-91f8-0db084def148-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/925b66c1-9372-4b86-a3fd-c3a703f015db-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/953b69a4-fec2-4d5c-ab1a-4ab4e60414a4-attachment.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/c168e427-e488-4c44-9edc-33220af7f567-attachment.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/cc936acb-c368-4de7-9bcf-a94d532a08a1-attachment.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/e1ede5f5-1aa5-4c9e-8946-9173af5777d5-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/e58a5f58-a65d-4aab-ba1c-6f048c38a36e-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/e6e64e88-941c-4211-9a15-c8669c4f69e3-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/eb6aa860-c1b3-4a9a-9126-aa1dace24611-attachment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ScreenShotEvidence/errorloginAmazon_20240731_112631.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ScreenShotEvidence/errorloginAmazon_20240731_112757.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_amazon_scrollBasic.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_amazon_scrollBasic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_login_fail.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_login_fail.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DOMpages/DOM-MercadoLibre.json" beforeDir="false" afterPath="$PROJECT_DIR$/DOMpages/DOM-MercadoLibre.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/reports/ScreenShotEvidence/errorloginAmazon_20240805_160843.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/FunctionsGeneric.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/FunctionsGeneric.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/InitConfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/utils/InitConfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/NavegadorInit.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/NavegadorInit.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +32,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -75,6 +63,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Python tests.Python tests for MercadoLibre.test_buscarProducto.TestBuscarMercadoLibre.test_amazon_scroll_basic.executor": "Run",
     "Python tests.Python tests for test_amazon_scrollBasic.TestAmazonScroll.test_amazon_scroll_basic.executor": "Run",
     "Python tests.Python tests for test_amazon_scrollBasic.test_amazon_scroll_basic.executor": "Run",
     "Python tests.Python tests for test_login_fail.TestFailLogin.test_fail_login_validMSG.executor": "Run",
@@ -91,8 +80,8 @@
     "Python.initConfig.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/isaac/PycharmProjects/SeleniumFrameWorkPython-v1.3/resources/drivers/linuxDebian",
+    "git-widget-placeholder": "PruebasVersion",
+    "last_opened_file_path": "/Users/isaac/PycharmProjects/SeleniumFrameWorkPython-v1.3/resources/drivers",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -104,8 +93,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/resources/drivers/linuxDebian" />
       <recent name="$PROJECT_DIR$/resources/drivers" />
+      <recent name="$PROJECT_DIR$/resources/drivers/linuxDebian" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/resources/drivers" />
@@ -113,7 +102,23 @@
       <recent name="$PROJECT_DIR$/utils" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_amazon_scrollBasic.TestAmazonScroll.test_amazon_scroll_basic">
+  <component name="RunManager" selected="Python tests.Python tests for MercadoLibre.test_buscarProducto.TestBuscarMercadoLibre.test_amazon_scroll_basic">
+    <configuration name="Python tests for MercadoLibre.test_buscarProducto.TestBuscarMercadoLibre.test_amazon_scroll_basic" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumFrameWorkPython-v1.3" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;MercadoLibre.test_buscarProducto.TestBuscarMercadoLibre.test_amazon_scroll_basic&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Python tests for test_amazon_scrollBasic.TestAmazonScroll.test_amazon_scroll_basic" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="SeleniumFrameWorkPython-v1.3" />
       <option name="ENV_FILES" value="" />
@@ -178,22 +183,6 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests in test_amazon_scrollBasic.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumFrameWorkPython-v1.3" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_amazon_scrollBasic.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
     <configuration name="ejecutarSelenium" type="tests" factoryName="py.test">
       <module name="SeleniumFrameWorkPython-v1.3" />
       <option name="ENV_FILES" value="" />
@@ -215,19 +204,19 @@
     </configuration>
     <list>
       <item itemvalue="Python tests.ejecutarSelenium" />
+      <item itemvalue="Python tests.Python tests for MercadoLibre.test_buscarProducto.TestBuscarMercadoLibre.test_amazon_scroll_basic" />
       <item itemvalue="Python tests.Python tests for test_amazon_scrollBasic.TestAmazonScroll.test_amazon_scroll_basic" />
       <item itemvalue="Python tests.Python tests for test_amazon_scrollBasic.test_amazon_scroll_basic" />
       <item itemvalue="Python tests.Python tests for test_login_fail.TestFailLogin.test_fail_login_validMSG" />
       <item itemvalue="Python tests.Python tests for test_login_fail.test_fail_login_validMSG" />
-      <item itemvalue="Python tests.Python tests in test_amazon_scrollBasic.py" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for MercadoLibre.test_buscarProducto.TestBuscarMercadoLibre.test_amazon_scroll_basic" />
         <item itemvalue="Python tests.Python tests for test_amazon_scrollBasic.TestAmazonScroll.test_amazon_scroll_basic" />
         <item itemvalue="Python tests.Python tests for test_login_fail.TestFailLogin.test_fail_login_validMSG" />
         <item itemvalue="Python tests.Python tests for test_amazon_scrollBasic.test_amazon_scroll_basic" />
         <item itemvalue="Python tests.Python tests for test_login_fail.test_fail_login_validMSG" />
-        <item itemvalue="Python tests.Python tests in test_amazon_scrollBasic.py" />
       </list>
     </recent_temporary>
   </component>
@@ -253,7 +242,7 @@
       <workItem from="1722621703583" duration="1359000" />
       <workItem from="1722624991488" duration="1942000" />
       <workItem from="1722734771329" duration="3367000" />
-      <workItem from="1722882343270" duration="5482000" />
+      <workItem from="1722882343270" duration="12667000" />
     </task>
     <task id="LOCAL-00001" summary="version con allure integrado para reportes y evidencia">
       <option name="closed" value="true" />
@@ -319,11 +308,38 @@
       <option name="project" value="LOCAL" />
       <updated>1722893684082</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="version final de template de test, solo hay que usar los siguientes para heredar y pasar el dom de la pagina con que se desea interactuar.&#10;@pytest.mark.usefixtures(&quot;navegador_setup&quot;)&#10;@pytest.mark.config_key('amazonPagecompras')">
+      <option name="closed" value="true" />
+      <created>1722896176922</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1722896176922</updated>
+    </task>
+    <task id="LOCAL-00010" summary="validar">
+      <option name="closed" value="true" />
+      <created>1722896668153</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1722896668153</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="version con allure integrado para reportes y evidencia" />
@@ -334,7 +350,9 @@
     <MESSAGE value="archivo jenkins para CI/CD" />
     <MESSAGE value="en ambientes linux ubunto, necesita mas tiempo de espera , aun cuando usas --headless--" />
     <MESSAGE value="creear herencia de todo el driverinit" />
-    <option name="LAST_COMMIT_MESSAGE" value="creear herencia de todo el driverinit" />
+    <MESSAGE value="version final de template de test, solo hay que usar los siguientes para heredar y pasar el dom de la pagina con que se desea interactuar.&#10;@pytest.mark.usefixtures(&quot;navegador_setup&quot;)&#10;@pytest.mark.config_key('amazonPagecompras')" />
+    <MESSAGE value="validar" />
+    <option name="LAST_COMMIT_MESSAGE" value="validar" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SeleniumFrameWorkPython_v1_3$initConfig.coverage" NAME="initConfig Coverage Results" MODIFIED="1722392069620" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
@@ -343,7 +361,7 @@
     <SUITE FILE_PATH="coverage/SeleniumFrameWorkPython_v1_3$DriverOptions.coverage" NAME="DriverOptions Coverage Results" MODIFIED="1722395414741" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/SeleniumFrameWorkPython_v1_3$ejecutarSelenium.coverage" NAME="ejecutarSelenium Coverage Results" MODIFIED="1722396648541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/SeleniumFrameWorkPython_v1_3$WebDriverFactory.coverage" NAME="WebDriverFactory Coverage Results" MODIFIED="1722391559835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
-    <SUITE FILE_PATH="coverage/SeleniumFrameWorkPython_v1_3$.coverage" NAME=" Coverage Results" MODIFIED="1722895902541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/SeleniumFrameWorkPython_v1_3$.coverage" NAME=" Coverage Results" MODIFIED="1722903632935" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/SeleniumFrameWorkPython_v1_3$CreateDriver.coverage" NAME="CreateDriver Coverage Results" MODIFIED="1722391423897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
   </component>
 </project>
