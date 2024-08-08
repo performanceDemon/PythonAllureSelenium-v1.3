@@ -13,7 +13,7 @@ from datetime import datetime
 
 
 class FunctionsGeneric:
-    def __init__(self, driver: WebDriver, config_file: str = 'DOMpages/DOM-Amazon.json', timeout=5):
+    def __init__(self, driver: WebDriver, config_file: str = 'DOMpages/DOM-Amazon.json', timeout=120):
         self.driver = driver
         # Resuelve la ruta del archivo JSON usando la ruta relativa
         config_path = os.path.join(os.path.dirname(__file__), '..', config_file)

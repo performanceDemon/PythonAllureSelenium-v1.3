@@ -1,51 +1,44 @@
 pipeline {
     agent any
 
-    environment {
-        REPO_URL = 'https://github.com/performanceDemon/PythonAllureSelenium-v1.3'
-        REPO_DIR = 'PythonAllureSelenium-v1.3'
-    }
-
     stages {
-        stage('Clone or Update Repository') {
+        stage('Instalar dependencias') {
             steps {
-                script {
-                    if (fileExists(env.REPO_DIR)) {
-                        dir(env.REPO_DIR) {
-                            sh 'git pull origin main'
-                        }
-                    } else {
-                        sh "git clone ${env.REPO_URL}"
-                    }
-                }
+                sh 'sudo apt update'
+                sh 'sudo apt install -y wget gnupg python3-pip git python3-venv'
+
+                // Instalar Google Chrome
+                sh '''
+                    if ! command -v google-chrome &> /dev/null; then
+                        wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+                        echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee /etc/apt/sources.list.d/google-chrome.list
+                        sudo apt update
+                        sudo apt install -y google-chrome-stable
+                    fi
+                '''
             }
         }
 
-        stage('Setup Virtual Environment') {
+        stage('Instalar dependencias del proyecto') {
             steps {
-                script {
-                    dir(env.REPO_DIR) {
-                        sh '''
-                        python3 -m venv venv
-                        . venv/bin/activate
-                        pip install -r requirements.txt
-                        '''
-                    }
-                }
+                // Crear y activar el entorno virtual
+                sh '''
+                    python3 -m venv venv
+                    source venv/bin/activate
+                '''
+
+                // Instalar dependencias del proyecto
+                sh 'pip install -r requirements.txt'
             }
         }
 
-        stage('Run Tests') {
+        stage('Ejecutar pruebas') {
             steps {
-                script {
-                    dir(env.REPO_DIR) {
-                        sh '''
-                        . venv/bin/activate
-                        pytest --alluredir=allure-results
-                        deactivate
-                        '''
-                    }
-                }
+                // Ejecutar las pruebas con pytest
+                sh 'pytest --alluredir=allure-results'
+
+                // Desactivar el entorno virtual
+                sh 'deactivate'
             }
         }
     }

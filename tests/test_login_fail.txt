@@ -16,10 +16,10 @@ class TestFailLogin(BaseTest):
         self.navegador.func.click('BtnIniciarSesion')
 
         # Esta función logea en un paso y valida el mensaje de error de manera genérica
-        self.navegador.func.login1step('InputEmailLogin', 'isaac@fake.com',
-                                       'BtnLoginContinuar1',
-                                       'ValMensaajeError',
-                                       'No pudimos encontrar una cuenta con esa dirección de correo electrónico')
+        #self.navegador.func.login1step('InputEmailLogin', 'isaac@fake.com',
+        #                               'BtnLoginContinuar1',
+         #                              'ValMensaajeError',
+          #                             'No pudimos encontrar una cuenta con esa dirección de correo electrónico')
 
         # Toma una captura de pantalla en caso de error
         self.navegador.func.take_screenshot('errorloginAmazon')

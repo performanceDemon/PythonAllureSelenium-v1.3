@@ -31,8 +31,10 @@ class InicializarDriver:
             # Ajustar la ruta del chromedriver según el sistema operativo
             if systemOperative == 'linux':
                 chrome_driver_path = os.path.join(driver_path, 'linuxDebian', 'chromedriver')
-            else:  # Asumimos que si no es linux, es windows
+            elif systemOperative == 'windows':  # Asumimos que  es windows
                 chrome_driver_path = os.path.join(driver_path, 'chromedriver.exe')
+            elif systemOperative == 'mac':  # Asumimos que  es windows
+                chrome_driver_path = os.path.join(driver_path, 'chromedriver')
 
             if not os.path.exists(chrome_driver_path):
                 raise FileNotFoundError(f"El archivo del driver no se encuentra en {chrome_driver_path}")
