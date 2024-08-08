@@ -7,7 +7,7 @@ from utils.NavegadorInit import BaseTest, navegador_setup
 @pytest.mark.usefixtures("navegador_setup")
 @pytest.mark.config_key('DOMMercadoLibre')
 class TestBuscarMercadoLibre(BaseTest):
-    def test_amazon_scroll_basic(self):
+    def test_merrcadoLibre_busqueda(self):
         self.navegador.iniciar_navegador('MercadoLibreURL')
     # Paso 1: Teclear 'tenis nike' en el campo de búsqueda
         self.navegador.func.send_keys('CampoBusquedaTXT', 'new balance numeric')
@@ -23,9 +23,9 @@ class TestBuscarMercadoLibre(BaseTest):
         self.navegador.func.scroll_bar_generic('down', 7000)
 
         self.navegador.func.wait_for_element('Paginador2')
-        self.navegador.func.click('Paginador2')
+        #self.navegador.func.click('Paginador2')
         self.navegador.func.take_screenshot('Pagina2-MercadoLibre')
 
-    pass
+
 
 
