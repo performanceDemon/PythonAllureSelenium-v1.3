@@ -22,10 +22,11 @@ pipeline {
         stage('Instalar dependencias del proyecto') {
             steps {
                 // Crear y activar el entorno virtual
+                // Crear y activar el entorno virtual
                 sh '''
                     python3 -m venv venv
-                    source venv/bin/activate
-                '''
+                    . venv/bin/activate
+                 '''
 
                 // Instalar dependencias del proyecto
                 sh 'pip install -r requirements.txt'
