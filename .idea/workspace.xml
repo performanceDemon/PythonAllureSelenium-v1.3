@@ -4,18 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="101d4367-1d0c-45ba-a10e-03ced100ecaa" name="Changes" comment="correccion final, desabilitar el virtual env de python">
-      <change afterPath="$PROJECT_DIR$/DOMpages/DOM_EBAY.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/MercadoLibre/test_buscar_Top.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_ebay_busquedaSencilla.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_ebay_link_masVendidos.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_ebay_paginador4.py" afterDir="false" />
+    <list default="true" id="101d4367-1d0c-45ba-a10e-03ced100ecaa" name="Changes" comment="aagregar mas test para validar compatibilidad">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DOMpages/DOM-MercadoLibre.json" beforeDir="false" afterPath="$PROJECT_DIR$/DOMpages/DOM-MercadoLibre.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_login_fail.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_login_fail.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/MercadoLibre/test_buscarProducto.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/MercadoLibre/test_buscarProducto.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_amazon_scrollBasic.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/InitConfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/utils/InitConfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_ebay_link_masVendidos.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_ebay_link_masVendidos.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -267,7 +258,7 @@
       <workItem from="1722734771329" duration="3367000" />
       <workItem from="1722882343270" duration="15059000" />
       <workItem from="1723090669261" duration="3118000" />
-      <workItem from="1723128228154" duration="2144000" />
+      <workItem from="1723128228154" duration="2567000" />
     </task>
     <task id="LOCAL-00001" summary="version con allure integrado para reportes y evidencia">
       <option name="closed" value="true" />
@@ -421,7 +412,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723096019609</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="aagregar mas test para validar compatibilidad">
+      <option name="closed" value="true" />
+      <created>1723130537734</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1723130537734</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -455,7 +454,8 @@
     <MESSAGE value="correccion pytest no detecta el bin" />
     <MESSAGE value="test error en linux corregidos" />
     <MESSAGE value="correccion final, desabilitar el virtual env de python" />
-    <option name="LAST_COMMIT_MESSAGE" value="correccion final, desabilitar el virtual env de python" />
+    <MESSAGE value="aagregar mas test para validar compatibilidad" />
+    <option name="LAST_COMMIT_MESSAGE" value="aagregar mas test para validar compatibilidad" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SeleniumFrameWorkPython_v1_3$initConfig.coverage" NAME="initConfig Coverage Results" MODIFIED="1722392069620" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
