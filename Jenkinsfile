@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    environment {
+    PATH = "/home/isaac/.local/bin:$PATH"
+    }
 
     stages {
         stage('Instalar dependencias') {
