@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="101d4367-1d0c-45ba-a10e-03ced100ecaa" name="Changes" comment="correccion jenkinfile">
+    <list default="true" id="101d4367-1d0c-45ba-a10e-03ced100ecaa" name="Changes" comment="correccion pytest no detecta el bin">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_login_fail.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_login_fail.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,8 +107,8 @@
       <recent name="$PROJECT_DIR$/resources/drivers/linuxDebian" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/resources/drivers" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/resources/drivers" />
       <recent name="$PROJECT_DIR$/utils" />
     </key>
   </component>
@@ -253,7 +253,7 @@
       <workItem from="1722624991488" duration="1942000" />
       <workItem from="1722734771329" duration="3367000" />
       <workItem from="1722882343270" duration="15059000" />
-      <workItem from="1723090669261" duration="2171000" />
+      <workItem from="1723090669261" duration="2612000" />
     </task>
     <task id="LOCAL-00001" summary="version con allure integrado para reportes y evidencia">
       <option name="closed" value="true" />
@@ -375,7 +375,23 @@
       <option name="project" value="LOCAL" />
       <updated>1723093603602</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="correccion pytest no detecta el bin">
+      <option name="closed" value="true" />
+      <created>1723094394540</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1723094394540</updated>
+    </task>
+    <task id="LOCAL-00017" summary="correccion pytest no detecta el bin">
+      <option name="closed" value="true" />
+      <created>1723094728050</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1723094728050</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -406,7 +422,8 @@
     <MESSAGE value="ya permite inicializar las paginas que uno necesite automatizar sin nececidad de borrar o harcodear la url raiz" />
     <MESSAGE value="limpiar reportes viejos" />
     <MESSAGE value="correccion jenkinfile" />
-    <option name="LAST_COMMIT_MESSAGE" value="correccion jenkinfile" />
+    <MESSAGE value="correccion pytest no detecta el bin" />
+    <option name="LAST_COMMIT_MESSAGE" value="correccion pytest no detecta el bin" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SeleniumFrameWorkPython_v1_3$initConfig.coverage" NAME="initConfig Coverage Results" MODIFIED="1722392069620" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
