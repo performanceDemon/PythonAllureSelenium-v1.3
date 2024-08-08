@@ -5,15 +5,19 @@
   },
   "BtnBusqueda": {
     "GetFielBy": "xpath",
-    "ValueToFind": "//div[@class='nav-icon-search']"
+    "ValueToFind": "//input[@id='gh-btn']"
   },
-  "Linkultimos90dias": {
+  "paginador4": {
     "GetFielBy": "xpath",
-    "ValueToFind": "//span[.='Últimos 90 Días']"
+    "ValueToFind": "//a[.='4']"
   },
-  "linkNanotenis": {
+  "LINKadidasMen": {
     "GetFielBy": "xpath",
-    "ValueToFind": "//a[.='reebok nano mujer']"
+    "ValueToFind": "//div[@class='srp-related-searches']//a[1]/span[contains(.,'shoes')]"
+  },
+  "LINarticulosdeportivos": {
+    "GetFielBy": "xpath",
+    "ValueToFind": "//span[.='Artículos deportivos']"
   },
   "InputEmailLogin": {
     "GetFielBy": "xpath",
@@ -29,6 +33,6 @@
   },
   "CampoBusquedaTXT": {
     "GetFielBy": "xpath",
-    "ValueToFind": "//input[@name='as_word']"
+    "ValueToFind": "//input[@id='gh-ac']"
   }
 }
