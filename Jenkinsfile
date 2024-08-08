@@ -42,8 +42,6 @@ pipeline {
                 // Ejecutar las pruebas con pytest
                 sh 'pytest --alluredir=allure-results'
 
-                // Desactivar el entorno virtual
-                sh 'deactivate'
             }
         }
     }
