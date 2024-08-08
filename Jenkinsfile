@@ -30,6 +30,7 @@ pipeline {
 
                 // Instalar dependencias del proyecto
                 sh 'pip install -r requirements.txt'
+                sh 'pip install pytest'
             }
         }
 
