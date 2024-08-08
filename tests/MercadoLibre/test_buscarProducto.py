@@ -25,6 +25,24 @@ class TestBuscarMercadoLibre(BaseTest):
         self.navegador.func.wait_for_element('Paginador2')
         #self.navegador.func.click('Paginador2')
         self.navegador.func.take_screenshot('Pagina2-MercadoLibre')
+    def test_merrcadoLibre_busqueda2(self):
+        self.navegador.iniciar_navegador('MercadoLibreURL')
+    # Paso 1: Teclear 'tenis nike' en el campo de búsqueda
+        self.navegador.func.send_keys('CampoBusquedaTXT', 'nike jordan')
+
+    # Paso 2: Hacer clic en el botón de búsqueda
+        self.navegador.func.click('BtnBusqueda')
+        #self.navegador.func.isvisible('BtnBusqueda')
+
+
+    # Paso 3: Hacer scroll hacia abajo 100 píxeles
+        self.navegador.func.scroll_bar_generic('down', 1000)
+        self.navegador.func.scroll_bar_generic('down', 1000)
+        self.navegador.func.scroll_bar_generic('down', 7000)
+
+        self.navegador.func.wait_for_element('Paginador2')
+        #self.navegador.func.click('Paginador2')
+        self.navegador.func.take_screenshot('resultadoBusqueda2')
 
 
 

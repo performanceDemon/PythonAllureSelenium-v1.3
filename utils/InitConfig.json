@@ -9,5 +9,7 @@
   "neeewval": "/reports/ScreenShotEvidence/",
   "amazonPagecompras": "DOMpages/DOM-Amazon.json",
   "MercadoLibreURL": "https://www.mercadolibre.com.mx/",
-  "DOMMercadoLibre": "DOMpages/DOM-MercadoLibre.json"
+  "DOMMercadoLibre": "DOMpages/DOM-MercadoLibre.json",
+  "DOMHomeEBAY": "DOMpages/DOM_EBAY.json",
+  "MainAppUrlEBAY": "https://mx.ebay.com/"
 }

@@ -4,9 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="101d4367-1d0c-45ba-a10e-03ced100ecaa" name="Changes" comment="correccion pytest no detecta el bin">
+    <list default="true" id="101d4367-1d0c-45ba-a10e-03ced100ecaa" name="Changes" comment="correccion final, desabilitar el virtual env de python">
+      <change afterPath="$PROJECT_DIR$/DOMpages/DOM_EBAY.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/MercadoLibre/test_buscar_Top.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_ebay_busquedaSencilla.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_ebay_link_masVendidos.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_ebay_paginador4.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_login_fail.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_login_fail.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DOMpages/DOM-MercadoLibre.json" beforeDir="false" afterPath="$PROJECT_DIR$/DOMpages/DOM-MercadoLibre.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_login_fail.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_login_fail.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/MercadoLibre/test_buscarProducto.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/MercadoLibre/test_buscarProducto.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_amazon_scrollBasic.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/InitConfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/utils/InitConfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,38 +78,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Python tests.Python tests for MercadoLibre.test_buscarProducto.TestBuscarMercadoLibre.test_amazon_scroll_basic.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for MercadoLibre.test_buscarProducto.TestBuscarMercadoLibre.test_merrcadoLibre_busqueda.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_amazon_scrollBasic.TestAmazonScroll.test_amazon_scroll_basic.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_amazon_scrollBasic.test_amazon_scroll_basic.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_login_fail.TestFailLogin.test_fail_login_validMSG.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_login_fail.test_fail_login_validMSG.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in AmazonExample.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in test_AmazonExample.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in test_amazon_scrollBasic.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.ejecutarSelenium.executor&quot;: &quot;Run&quot;,
-    &quot;Python.CreateDriver.executor&quot;: &quot;Run&quot;,
-    &quot;Python.DriverOptions.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Hooks.executor&quot;: &quot;Run&quot;,
-    &quot;Python.SeleniumFunctions.executor&quot;: &quot;Run&quot;,
-    &quot;Python.WebDriverFactory.executor&quot;: &quot;Run&quot;,
-    &quot;Python.initConfig.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;PruebasVersion&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/isaac/PycharmProjects/SeleniumFrameWorkPython-v1.3/resources/drivers&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.project&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Python tests.Python tests for MercadoLibre.test_buscarProducto.TestBuscarMercadoLibre.test_amazon_scroll_basic.executor": "Run",
+    "Python tests.Python tests for MercadoLibre.test_buscarProducto.TestBuscarMercadoLibre.test_merrcadoLibre_busqueda.executor": "Run",
+    "Python tests.Python tests for MercadoLibre.test_buscar_Top.TestBuscarTopMercadoLibre.executor": "Run",
+    "Python tests.Python tests for test_amazon_scrollBasic.TestAmazonScroll.test_amazon_scroll_basic.executor": "Run",
+    "Python tests.Python tests for test_amazon_scrollBasic.test_amazon_scroll_basic.executor": "Run",
+    "Python tests.Python tests for test_ebay_busquedaSencilla.TestBuscarEBAY.executor": "Run",
+    "Python tests.Python tests for test_ebay_busquedaSencilla.TestBuscarEBAY.test_ebay_busqueda1.executor": "Run",
+    "Python tests.Python tests for test_ebay_paginador4.TestPaginador4EBAY.test_ebay_paginador4.executor": "Run",
+    "Python tests.Python tests for test_login_fail.TestFailLogin.test_fail_login_validMSG.executor": "Run",
+    "Python tests.Python tests for test_login_fail.test_fail_login_validMSG.executor": "Run",
+    "Python tests.Python tests in AmazonExample.py.executor": "Run",
+    "Python tests.Python tests in test_AmazonExample.py.executor": "Run",
+    "Python tests.Python tests in test_amazon_scrollBasic.py.executor": "Run",
+    "Python tests.ejecutarSelenium.executor": "Run",
+    "Python.CreateDriver.executor": "Run",
+    "Python.DriverOptions.executor": "Run",
+    "Python.Hooks.executor": "Run",
+    "Python.SeleniumFunctions.executor": "Run",
+    "Python.WebDriverFactory.executor": "Run",
+    "Python.initConfig.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "PruebasVersion",
+    "last_opened_file_path": "/Users/isaac/PycharmProjects/SeleniumFrameWorkPython-v1.3/resources/drivers",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "configurable.group.project",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/resources/drivers" />
@@ -112,23 +125,7 @@
       <recent name="$PROJECT_DIR$/utils" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for MercadoLibre.test_buscarProducto.TestBuscarMercadoLibre.test_merrcadoLibre_busqueda">
-    <configuration name="Python tests for MercadoLibre.test_buscarProducto.TestBuscarMercadoLibre.test_amazon_scroll_basic" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumFrameWorkPython-v1.3" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;MercadoLibre.test_buscarProducto.TestBuscarMercadoLibre.test_amazon_scroll_basic&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Python tests for MercadoLibre.test_buscar_Top.TestBuscarTopMercadoLibre">
     <configuration name="Python tests for MercadoLibre.test_buscarProducto.TestBuscarMercadoLibre.test_merrcadoLibre_busqueda" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="SeleniumFrameWorkPython-v1.3" />
       <option name="ENV_FILES" value="" />
@@ -145,7 +142,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_amazon_scrollBasic.TestAmazonScroll.test_amazon_scroll_basic" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for MercadoLibre.test_buscar_Top.TestBuscarTopMercadoLibre" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="SeleniumFrameWorkPython-v1.3" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -157,11 +154,11 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_amazon_scrollBasic.TestAmazonScroll.test_amazon_scroll_basic&quot;" />
+      <option name="_new_target" value="&quot;MercadoLibre.test_buscar_Top.TestBuscarTopMercadoLibre&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_amazon_scrollBasic.test_amazon_scroll_basic" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_ebay_busquedaSencilla.TestBuscarEBAY" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="SeleniumFrameWorkPython-v1.3" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -173,11 +170,11 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_amazon_scrollBasic.test_amazon_scroll_basic&quot;" />
+      <option name="_new_target" value="&quot;test_ebay_busquedaSencilla.TestBuscarEBAY&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_login_fail.TestFailLogin.test_fail_login_validMSG" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_ebay_busquedaSencilla.TestBuscarEBAY.test_ebay_busqueda1" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="SeleniumFrameWorkPython-v1.3" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -189,7 +186,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_login_fail.TestFailLogin.test_fail_login_validMSG&quot;" />
+      <option name="_new_target" value="&quot;test_ebay_busquedaSencilla.TestBuscarEBAY.test_ebay_busqueda1&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_ebay_paginador4.TestPaginador4EBAY.test_ebay_paginador4" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumFrameWorkPython-v1.3" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_ebay_paginador4.TestPaginador4EBAY.test_ebay_paginador4&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -214,19 +227,19 @@
     </configuration>
     <list>
       <item itemvalue="Python tests.ejecutarSelenium" />
-      <item itemvalue="Python tests.Python tests for MercadoLibre.test_buscarProducto.TestBuscarMercadoLibre.test_amazon_scroll_basic" />
+      <item itemvalue="Python tests.Python tests for MercadoLibre.test_buscar_Top.TestBuscarTopMercadoLibre" />
+      <item itemvalue="Python tests.Python tests for test_ebay_busquedaSencilla.TestBuscarEBAY" />
+      <item itemvalue="Python tests.Python tests for test_ebay_busquedaSencilla.TestBuscarEBAY.test_ebay_busqueda1" />
+      <item itemvalue="Python tests.Python tests for test_ebay_paginador4.TestPaginador4EBAY.test_ebay_paginador4" />
       <item itemvalue="Python tests.Python tests for MercadoLibre.test_buscarProducto.TestBuscarMercadoLibre.test_merrcadoLibre_busqueda" />
-      <item itemvalue="Python tests.Python tests for test_amazon_scrollBasic.TestAmazonScroll.test_amazon_scroll_basic" />
-      <item itemvalue="Python tests.Python tests for test_amazon_scrollBasic.test_amazon_scroll_basic" />
-      <item itemvalue="Python tests.Python tests for test_login_fail.TestFailLogin.test_fail_login_validMSG" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for MercadoLibre.test_buscar_Top.TestBuscarTopMercadoLibre" />
+        <item itemvalue="Python tests.Python tests for test_ebay_paginador4.TestPaginador4EBAY.test_ebay_paginador4" />
+        <item itemvalue="Python tests.Python tests for test_ebay_busquedaSencilla.TestBuscarEBAY" />
+        <item itemvalue="Python tests.Python tests for test_ebay_busquedaSencilla.TestBuscarEBAY.test_ebay_busqueda1" />
         <item itemvalue="Python tests.Python tests for MercadoLibre.test_buscarProducto.TestBuscarMercadoLibre.test_merrcadoLibre_busqueda" />
-        <item itemvalue="Python tests.Python tests for MercadoLibre.test_buscarProducto.TestBuscarMercadoLibre.test_amazon_scroll_basic" />
-        <item itemvalue="Python tests.Python tests for test_amazon_scrollBasic.TestAmazonScroll.test_amazon_scroll_basic" />
-        <item itemvalue="Python tests.Python tests for test_login_fail.TestFailLogin.test_fail_login_validMSG" />
-        <item itemvalue="Python tests.Python tests for test_amazon_scrollBasic.test_amazon_scroll_basic" />
       </list>
     </recent_temporary>
   </component>
@@ -253,7 +266,8 @@
       <workItem from="1722624991488" duration="1942000" />
       <workItem from="1722734771329" duration="3367000" />
       <workItem from="1722882343270" duration="15059000" />
-      <workItem from="1723090669261" duration="2612000" />
+      <workItem from="1723090669261" duration="3118000" />
+      <workItem from="1723128228154" duration="2144000" />
     </task>
     <task id="LOCAL-00001" summary="version con allure integrado para reportes y evidencia">
       <option name="closed" value="true" />
@@ -391,7 +405,23 @@
       <option name="project" value="LOCAL" />
       <updated>1723094728050</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="test error en linux corregidos">
+      <option name="closed" value="true" />
+      <created>1723095186681</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1723095186681</updated>
+    </task>
+    <task id="LOCAL-00019" summary="correccion final, desabilitar el virtual env de python">
+      <option name="closed" value="true" />
+      <created>1723096019609</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1723096019609</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -423,7 +453,9 @@
     <MESSAGE value="limpiar reportes viejos" />
     <MESSAGE value="correccion jenkinfile" />
     <MESSAGE value="correccion pytest no detecta el bin" />
-    <option name="LAST_COMMIT_MESSAGE" value="correccion pytest no detecta el bin" />
+    <MESSAGE value="test error en linux corregidos" />
+    <MESSAGE value="correccion final, desabilitar el virtual env de python" />
+    <option name="LAST_COMMIT_MESSAGE" value="correccion final, desabilitar el virtual env de python" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SeleniumFrameWorkPython_v1_3$initConfig.coverage" NAME="initConfig Coverage Results" MODIFIED="1722392069620" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
@@ -432,7 +464,7 @@
     <SUITE FILE_PATH="coverage/SeleniumFrameWorkPython_v1_3$DriverOptions.coverage" NAME="DriverOptions Coverage Results" MODIFIED="1722395414741" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/SeleniumFrameWorkPython_v1_3$ejecutarSelenium.coverage" NAME="ejecutarSelenium Coverage Results" MODIFIED="1722396648541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/SeleniumFrameWorkPython_v1_3$WebDriverFactory.coverage" NAME="WebDriverFactory Coverage Results" MODIFIED="1722391559835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
-    <SUITE FILE_PATH="coverage/SeleniumFrameWorkPython_v1_3$.coverage" NAME=" Coverage Results" MODIFIED="1723092094350" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/SeleniumFrameWorkPython_v1_3$.coverage" NAME=" Coverage Results" MODIFIED="1723129893129" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/SeleniumFrameWorkPython_v1_3$CreateDriver.coverage" NAME="CreateDriver Coverage Results" MODIFIED="1722391423897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
   </component>
 </project>
