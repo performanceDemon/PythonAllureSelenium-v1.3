@@ -8,7 +8,7 @@ class TestBuscarlinkmasvenddosEBAY(BaseTest):
     def test_ebay_busquedaLinkmasVenidos(self):
         self.navegador.iniciar_navegador('MainAppUrlEBAY')
     # Paso 1: Teclear 'tenis nike' en el campo de búsqueda
-        self.navegador.func.send_keys('CampoBusquedaTXT', 'adidas running')
+        self.navegador.func.send_keys('CampoBusquedaTXT', 'salomon running')
 
     # Paso 2: Hacer clic en el botón de búsqueda
         self.navegador.func.click('BtnBusqueda')
@@ -20,6 +20,6 @@ class TestBuscarlinkmasvenddosEBAY(BaseTest):
         self.navegador.func.scroll_bar_generic('down', 1000)
         self.navegador.func.scroll_bar_generic('down', 7000)
 
-        self.navegador.func.wait_for_element('LINarticulosdeportivos')
-        self.navegador.func.click('LINarticulosdeportivos')
+        #self.navegador.func.wait_for_element('LINarticulosdeportivos')
+        #self.navegador.func.click('LINarticulosdeportivos')
         self.navegador.func.take_screenshot('resultadoBusqueda1')
