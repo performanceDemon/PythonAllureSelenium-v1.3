@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="101d4367-1d0c-45ba-a10e-03ced100ecaa" name="Changes" comment="aagregar mas test para validar compatibilidad">
+    <list default="true" id="101d4367-1d0c-45ba-a10e-03ced100ecaa" name="Changes" comment="actualizar driver edge">
+      <change afterPath="$PROJECT_DIR$/utils/arbolesBinariosDFS.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/examenCoderPad.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/usoDecorators.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/usoDocTest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_ebay_link_masVendidos.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_ebay_link_masVendidos.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/drivers/msedgedriver" beforeDir="false" afterPath="$PROJECT_DIR$/resources/drivers/msedgedriver" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/DriverOptions.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/DriverOptions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/InitConfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/utils/InitConfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +63,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/darko-isaac/PythonAllureSelenium-v1.3.git&quot;,
-    &quot;accountId&quot;: &quot;80ab51ae-c66c-4448-a5da-a088cb20d987&quot;
+    &quot;accountId&quot;: &quot;0444022e-7cd7-46fe-b13b-d2dd84af9a91&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -69,132 +75,166 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Python tests.Python tests for MercadoLibre.test_buscarProducto.TestBuscarMercadoLibre.test_amazon_scroll_basic.executor": "Run",
-    "Python tests.Python tests for MercadoLibre.test_buscarProducto.TestBuscarMercadoLibre.test_merrcadoLibre_busqueda.executor": "Run",
-    "Python tests.Python tests for MercadoLibre.test_buscar_Top.TestBuscarTopMercadoLibre.executor": "Run",
-    "Python tests.Python tests for test_amazon_scrollBasic.TestAmazonScroll.test_amazon_scroll_basic.executor": "Run",
-    "Python tests.Python tests for test_amazon_scrollBasic.test_amazon_scroll_basic.executor": "Run",
-    "Python tests.Python tests for test_ebay_busquedaSencilla.TestBuscarEBAY.executor": "Run",
-    "Python tests.Python tests for test_ebay_busquedaSencilla.TestBuscarEBAY.test_ebay_busqueda1.executor": "Run",
-    "Python tests.Python tests for test_ebay_paginador4.TestPaginador4EBAY.test_ebay_paginador4.executor": "Run",
-    "Python tests.Python tests for test_login_fail.TestFailLogin.test_fail_login_validMSG.executor": "Run",
-    "Python tests.Python tests for test_login_fail.test_fail_login_validMSG.executor": "Run",
-    "Python tests.Python tests in AmazonExample.py.executor": "Run",
-    "Python tests.Python tests in test_AmazonExample.py.executor": "Run",
-    "Python tests.Python tests in test_amazon_scrollBasic.py.executor": "Run",
-    "Python tests.ejecutarSelenium.executor": "Run",
-    "Python.CreateDriver.executor": "Run",
-    "Python.DriverOptions.executor": "Run",
-    "Python.Hooks.executor": "Run",
-    "Python.SeleniumFunctions.executor": "Run",
-    "Python.WebDriverFactory.executor": "Run",
-    "Python.initConfig.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "PruebasVersion",
-    "last_opened_file_path": "/Users/isaac/PycharmProjects/SeleniumFrameWorkPython-v1.3/resources/drivers",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "configurable.group.project",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Python tests.Doctests in examenCoderPad.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for MercadoLibre.test_buscarProducto.TestBuscarMercadoLibre.test_amazon_scroll_basic.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for MercadoLibre.test_buscarProducto.TestBuscarMercadoLibre.test_merrcadoLibre_busqueda.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for MercadoLibre.test_buscar_Top.TestBuscarTopMercadoLibre.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for MercadoLibre.test_buscar_Top.TestBuscarTopMercadoLibre.test_merrcadoLibre_busquedaTop.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_amazon_scrollBasic.TestAmazonScroll.test_amazon_scroll_basic.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_amazon_scrollBasic.test_amazon_scroll_basic.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_ebay_busquedaSencilla.TestBuscarEBAY.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_ebay_busquedaSencilla.TestBuscarEBAY.test_ebay_busqueda1.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_ebay_paginador4.TestPaginador4EBAY.test_ebay_paginador4.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_login_fail.TestFailLogin.test_fail_login_validMSG.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_login_fail.test_fail_login_validMSG.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in AmazonExample.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_AmazonExample.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_amazon_scrollBasic.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.ejecutarSelenium.executor&quot;: &quot;Run&quot;,
+    &quot;Python.CreateDriver.executor&quot;: &quot;Run&quot;,
+    &quot;Python.DriverOptions.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Hooks.executor&quot;: &quot;Run&quot;,
+    &quot;Python.SeleniumFunctions.executor&quot;: &quot;Run&quot;,
+    &quot;Python.WebDriverFactory.executor&quot;: &quot;Run&quot;,
+    &quot;Python.arbolesBinariosDFS.executor&quot;: &quot;Run&quot;,
+    &quot;Python.examenCoderPad.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.initConfig.executor&quot;: &quot;Run&quot;,
+    &quot;Python.testBiresDev.executor&quot;: &quot;Run&quot;,
+    &quot;Python.usoDecorators.executor&quot;: &quot;Run&quot;,
+    &quot;Python.usoDocTest.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;PruebasVersion&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/isaac/PycharmProjects/SeleniumFrameWorkPython-v1.3&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/resources/drivers" />
       <recent name="$PROJECT_DIR$/resources/drivers/linuxDebian" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/resources/drivers" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/utils" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for MercadoLibre.test_buscar_Top.TestBuscarTopMercadoLibre">
-    <configuration name="Python tests for MercadoLibre.test_buscarProducto.TestBuscarMercadoLibre.test_merrcadoLibre_busqueda" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.arbolesBinariosDFS">
+    <configuration name="arbolesBinariosDFS" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="SeleniumFrameWorkPython-v1.3" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/utils" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;MercadoLibre.test_buscarProducto.TestBuscarMercadoLibre.test_merrcadoLibre_busqueda&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/arbolesBinariosDFS.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for MercadoLibre.test_buscar_Top.TestBuscarTopMercadoLibre" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="examenCoderPad" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="SeleniumFrameWorkPython-v1.3" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/utils" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;MercadoLibre.test_buscar_Top.TestBuscarTopMercadoLibre&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/examenCoderPad.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_ebay_busquedaSencilla.TestBuscarEBAY" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="usoDecorators" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="SeleniumFrameWorkPython-v1.3" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/utils" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_ebay_busquedaSencilla.TestBuscarEBAY&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/usoDecorators.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_ebay_busquedaSencilla.TestBuscarEBAY.test_ebay_busqueda1" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="usoDocTest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="SeleniumFrameWorkPython-v1.3" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/utils" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_ebay_busquedaSencilla.TestBuscarEBAY.test_ebay_busqueda1&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/usoDocTest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_ebay_paginador4.TestPaginador4EBAY.test_ebay_paginador4" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Doctests in examenCoderPad" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
       <module name="SeleniumFrameWorkPython-v1.3" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/utils" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_ebay_paginador4.TestPaginador4EBAY.test_ebay_paginador4&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/examenCoderPad.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
       <method v="2" />
     </configuration>
     <configuration name="ejecutarSelenium" type="tests" factoryName="py.test">
@@ -203,7 +243,6 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.12 (SeleniumFrameWorkPython-v1.3)" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -217,28 +256,27 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.arbolesBinariosDFS" />
+      <item itemvalue="Python.examenCoderPad" />
+      <item itemvalue="Python.usoDecorators" />
+      <item itemvalue="Python.usoDocTest" />
       <item itemvalue="Python tests.ejecutarSelenium" />
-      <item itemvalue="Python tests.Python tests for MercadoLibre.test_buscar_Top.TestBuscarTopMercadoLibre" />
-      <item itemvalue="Python tests.Python tests for test_ebay_busquedaSencilla.TestBuscarEBAY" />
-      <item itemvalue="Python tests.Python tests for test_ebay_busquedaSencilla.TestBuscarEBAY.test_ebay_busqueda1" />
-      <item itemvalue="Python tests.Python tests for test_ebay_paginador4.TestPaginador4EBAY.test_ebay_paginador4" />
-      <item itemvalue="Python tests.Python tests for MercadoLibre.test_buscarProducto.TestBuscarMercadoLibre.test_merrcadoLibre_busqueda" />
+      <item itemvalue="Python tests.Doctests in examenCoderPad" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for MercadoLibre.test_buscar_Top.TestBuscarTopMercadoLibre" />
-        <item itemvalue="Python tests.Python tests for test_ebay_paginador4.TestPaginador4EBAY.test_ebay_paginador4" />
-        <item itemvalue="Python tests.Python tests for test_ebay_busquedaSencilla.TestBuscarEBAY" />
-        <item itemvalue="Python tests.Python tests for test_ebay_busquedaSencilla.TestBuscarEBAY.test_ebay_busqueda1" />
-        <item itemvalue="Python tests.Python tests for MercadoLibre.test_buscarProducto.TestBuscarMercadoLibre.test_merrcadoLibre_busqueda" />
+        <item itemvalue="Python.arbolesBinariosDFS" />
+        <item itemvalue="Python.examenCoderPad" />
+        <item itemvalue="Python.usoDecorators" />
+        <item itemvalue="Python.usoDocTest" />
+        <item itemvalue="Python tests.Doctests in examenCoderPad" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-PY-241.18034.82" />
-        <option value="bundled-python-sdk-975db3bf15a3-2767605e8bc2-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.18034.82" />
+        <option value="bundled-python-sdk-975db3bf15a3-31b6be0877a2-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.18034.82" />
       </set>
     </attachedChunks>
   </component>
@@ -258,7 +296,9 @@
       <workItem from="1722734771329" duration="3367000" />
       <workItem from="1722882343270" duration="15059000" />
       <workItem from="1723090669261" duration="3118000" />
-      <workItem from="1723128228154" duration="2567000" />
+      <workItem from="1723128228154" duration="3608000" />
+      <workItem from="1723307253515" duration="1322000" />
+      <workItem from="1723670476376" duration="624000" />
     </task>
     <task id="LOCAL-00001" summary="version con allure integrado para reportes y evidencia">
       <option name="closed" value="true" />
@@ -420,7 +460,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723130537734</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="aagregar mas test para validar compatibilidad">
+      <option name="closed" value="true" />
+      <created>1723131145189</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1723131145189</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
